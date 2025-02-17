@@ -3,7 +3,7 @@ class ISBNNo{
 		long num=1259060977L;
 		int sum=0;
 		for(long i=num, j=1;i>0;i/=10,j++){
-			long rem=num%10;
+			long rem=i%10;
 			sum+=(rem*j);
 		}
 		if(sum%11==0){
