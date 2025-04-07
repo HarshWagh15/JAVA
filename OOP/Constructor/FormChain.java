@@ -1,4 +1,4 @@
-class Form{
+class FormChain{
 	String name;
 	long phno;
 	long tel;
@@ -10,37 +10,27 @@ class Form{
 
 
 
-Form(String name,long phno,char gen, String dob ){
+FormChain(String name,long phno,char gen, String dob ){
 	this.name=name;
 	this.phno=phno;
 	this.gen=gen;
 	this.dob=dob;
 }
 
-Form(String name,long phno,char gen, String dob, long tel ){
-	this.name=name;
-	this.phno=phno;
-	this.gen=gen;
-	this.dob=dob;
 
+FormChain(String name,long phno,char gen, String dob, long tel ){
+	
+	this(name,phno,gen,dob); //Constructor Chaining
 	this.tel=tel;
 }
 
 
-
-Form(String name,long phno,char gen, String dob, long tel, String blood ){
-	this.name=name;
-	this.phno=phno;
-	this.gen=gen;
-	this.dob=dob;
-	this.tel=tel;
-
+FormChain(String name,long phno,char gen, String dob, long tel, String blood ){
+	this(name,phno,gen,dob,tel);
 	this.blood=blood;
 }
 
-
-
-public void displayForm(){
+public void displayFormChain(){
 	System.out.println(name);
 	System.out.println(phno);
 	System.out.println(tel);
