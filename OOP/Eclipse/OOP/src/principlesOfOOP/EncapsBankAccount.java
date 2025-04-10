@@ -19,7 +19,16 @@ EncapsBankAccount(String userName,String bankName, long accNo,int pin, String IF
 	
 }
 
+//Getter Methods
+public String getUserName() {
+	return userName;
+}
+public String getBankName() {
+	return bankName;
+}
 
+
+//Setter Methods
 public void SetNewPin(String userName, int newPin,int oldPin) {
 	if (this.userName==userName && this.pin==oldPin) {
 		pin=newPin;
