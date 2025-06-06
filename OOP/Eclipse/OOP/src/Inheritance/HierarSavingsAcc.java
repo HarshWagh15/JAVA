@@ -1,29 +1,29 @@
 package Inheritance;
 
 public class HierarSavingsAcc extends HierarBankAcc{
-	double Interest;
-	String Type;
+	int ROI;
+	long PrincipleAmt;
 	
 	public HierarSavingsAcc() {
 		// TODO Auto-generated constructor stub
 	};
 	
-	public HierarSavingsAcc(String userName,String IFSC, String BankName,long AccNo,double Interest,String Type){
+	public HierarSavingsAcc(String userName,String IFSC, String BankName,long AccNo,int ROI,long PrincipleAmt){
 		this.userName=userName;
 		this.IFSC=IFSC;
 		this.BankName=BankName;
 		this.AccNo=AccNo;
 		
 		
-		this.Interest=Interest;
-		this.Type=Type;
+		this.ROI=ROI;
+		this.PrincipleAmt=PrincipleAmt;
 		
 	};
 	
 	public void displaySavingsAcc() {
 		displayBankAcc();
 		
-		System.out.println(Interest);
-		System.out.println(Type);
+		System.out.println(ROI);
+		System.out.println(PrincipleAmt);
 	}
 }
