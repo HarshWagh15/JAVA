@@ -4,11 +4,11 @@ public class SingleInheSavingsAcc extends SingleInheBankAcc{
 	double Interest;
 	String Type;
 	
-	SingleInheSavingsAcc(){
+	public SingleInheSavingsAcc(){
 		
 	};
 	
-	SingleInheSavingsAcc(String userName,String IFSC, String BankName,long AccNo,double Interest,String Type){
+	public SingleInheSavingsAcc(String userName,String IFSC, String BankName,long AccNo,double Interest,String Type){
 		this.userName=userName;
 		this.IFSC=IFSC;
 		this.BankName=BankName;

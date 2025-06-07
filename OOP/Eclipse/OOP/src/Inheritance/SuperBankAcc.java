@@ -1,16 +1,16 @@
 package Inheritance;
 
-public class SingleInheBankAcc {
+public class SuperBankAcc {
 	String userName;
 	String IFSC;
 	String BankName;
 	long AccNo;
 	
-	public SingleInheBankAcc(){
+	public SuperBankAcc(){
 		
 	};
 	
-	public SingleInheBankAcc(String userName,String IFSC, String BankName,long AccNo){
+	public SuperBankAcc(String userName,String IFSC, String BankName,long AccNo){
 		this.userName=userName;
 		this.IFSC=IFSC;
 		this.BankName=BankName;
